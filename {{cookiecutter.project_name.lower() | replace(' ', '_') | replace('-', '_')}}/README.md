@@ -16,7 +16,7 @@ ___
 </div>
 
 ## 📋 Table of Contents
-- [{{cookiecutter.project\_name}}](#cookiecutterproject_name)
+- [{{cookiecutter.project_name}}](#cookiecutterproject_name)
   - [📋 Table of Contents](#-table-of-contents)
   - [⚙️ Installation](#️-installation)
     - [Clone the repository](#clone-the-repository)
