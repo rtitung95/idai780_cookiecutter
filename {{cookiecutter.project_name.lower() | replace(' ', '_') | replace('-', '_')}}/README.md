@@ -7,25 +7,25 @@
 <img src="figures/test.png" width="800px">
 <p><i>Figure:Generated samples from Visual AutoRegressive (VAR) transformers trained on ImageNet. We show 512×512 samples (top), 256×256 samples (middle), and zero-shot image editing results (bottom).</i></p>
 </div>
-
+  
 ## 📋 Table of Contents
-- [{{cookiecutter.project_name}}](#cookiecutterproject_name)
+- [{{cookiecutter.project_name}}](#{{cookiecutter.project_name}})
   - [📋 Table of Contents](#-table-of-contents)
-  - [⚙️ Installation](#️-installation)
+  - [Installation](#installation)
     - [Clone the repository](#clone-the-repository)
     - [Create and activate conda environment](#create-and-activate-conda-environment)
     - [Install additional dependencies if any](#install-additional-dependencies-if-any)
-  - [📁 Project Structure](#-project-structure)
-  - [🚀 Usage](#-usage)
+  - [Project Structure](#project-structure)
+  - [Usage](#usage)
     - [Training](#training)
     - [Evaluation](#evaluation)
   - [Demo](#demo)
-  - [📊 Results \& Visualization](#-results--visualization)
-  - [📝 Model Card](#-model-card)
-  - [📚 Citation](#-citation)
-  - [📄 License](#-license)
+  - [Results \& Visualization](#results--visualization)
+  - [Model Card](#model-card)
+  - [Citation](#citation)
+  - [License](#license)
 
-## ⚙️ Installation
+## Installation
 ### Clone the repository
 ```bash
 git clone https://github.com/github_repo.git
@@ -41,7 +41,7 @@ conda activate {{cookiecutter.project_slug}}
 pip install -e .
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 {{cookiecutter.project_slug}}/
@@ -54,7 +54,7 @@ pip install -e .
     └── README.md      # Project documentation
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Training
 
@@ -79,7 +79,7 @@ python eval.py  --checkpoint models/path/to/checkpoint
 python run_demo.py --input data/path/to/input
 ```
 
-## 📊 Results & Visualization
+## Results & Visualization
 
 [Add tables, figures, or graphs showing your key results]
 
@@ -89,11 +89,11 @@ python run_demo.py --input data/path/to/input
 | Precision | X% |
 | Recall | X% |
 
-## 📝 Model Card
+## Model Card
 Please see the [Hugging Face page](https://huggingface.co/username/my-model)
 for the full model card.
 
-## 📚 Citation
+## Citation
 
 If you use this code in your research, please cite:
 
@@ -107,6 +107,6 @@ If you use this code in your research, please cite:
 }
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the {{cookiecutter.open_source_license}} License - see the [LICENSE](LICENSE) file for details.
