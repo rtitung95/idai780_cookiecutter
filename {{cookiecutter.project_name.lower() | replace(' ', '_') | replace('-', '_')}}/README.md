@@ -9,7 +9,7 @@
 </div>
   
 ## 📋 Table of Contents
-- [{{cookiecutter.project_name}}](#{{cookiecutter.project_name}})
+- [{{cookiecutter.project_name}}](#{{cookiecutter.project_name.lower() | replace(' ', '-')}})
   - [📋 Table of Contents](#-table-of-contents)
   - [Installation](#installation)
     - [Clone the repository](#clone-the-repository)
