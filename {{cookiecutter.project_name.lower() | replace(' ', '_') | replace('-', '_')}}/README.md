@@ -96,7 +96,6 @@ python run_demo.py --input data/path/to/input
 | Precision | X% |
 | Recall | X% |
 
-{% if cookiecutter.include_model_card == 'y' %}
 ## 📝 Model Card
 Please see the [Hugging Face page](https://huggingface.co/username/my-model)
 for the full model card.
