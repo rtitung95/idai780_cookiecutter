@@ -1,11 +1,4 @@
 # {{cookiecutter.project_name}}
-
-<div align="center">
-[![License](https://img.shields.io/badge/License-{{cookiecutter.open_source_license}}-blue.svg)](LICENSE)
-![Python {{cookiecutter.python_version}}](https://img.shields.io/badge/python-{{cookiecutter.python_version}}-blue.svg)
-</div>
-
-___
 {{cookiecutter.project_short_description}}
 
 <ins>[{{cookiecutter.author_name}}](mailto:{{cookiecutter.author_email}})</ins>
