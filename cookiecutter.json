@@ -1,0 +1,14 @@
+{
+  "project_name": "My Research Project",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "author_name": "Your Name",
+  "author_email": "your.email@example.com",
+  "institution": "Your Institution",
+  "project_short_description": "A brief description of your research project",
+  "version": "0.1.0",
+  "open_source_license": ["MIT", "BSD-3-Clause", "No license file"],
+  "framework": ["PyTorch", "TensorFlow", "JAX", "Other"],
+  "python_version": "3.11",
+  "include_model_card": "y",
+  "include_demo": "y"
+}
