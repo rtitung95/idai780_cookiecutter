@@ -9,5 +9,5 @@
 2. Generate the boilerplate
 
   ```bash
-  cookiecutter https://github.com/rtitung95/cookiecutter-flask.git
+  cookiecutter https://github.com/rtitung95/idai780_cookiecutter.git
   ```
