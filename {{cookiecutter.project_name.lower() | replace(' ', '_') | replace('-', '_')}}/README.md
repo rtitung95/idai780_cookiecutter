@@ -1,54 +1,51 @@
 # {{cookiecutter.project_name}}
 
 <div align="center">
-
 [![License](https://img.shields.io/badge/License-{{cookiecutter.open_source_license}}-blue.svg)](LICENSE)
 ![Python {{cookiecutter.python_version}}](https://img.shields.io/badge/python-{{cookiecutter.python_version}}-blue.svg)
-![Framework](https://img.shields.io/badge/Framework-{{cookiecutter.framework}}-orange.svg)
+</div>
 
+___
+{{cookiecutter.project_short_description}}
+
+<ins>[{{cookiecutter.author_name}}](mailto:{{cookiecutter.author_email}})</ins>
+
+<div align="center">
+<img src="figures/test.png" width="800px">
+<p><i>Figure:Generated samples from Visual AutoRegressive (VAR) transformers trained on ImageNet. We show 512×512 samples (top), 256×256 samples (middle), and zero-shot image editing results (bottom).</i></p>
 </div>
 
 ## 📋 Table of Contents
-- [{{cookiecutter.project_name}}](#cookiecutterproject_name)
+- [{{cookiecutter.project\_name}}](#cookiecutterproject_name)
   - [📋 Table of Contents](#-table-of-contents)
-  - [🔍 Overview](#-overview)
-  - [🏗 Framework](#-framework)
   - [⚙️ Installation](#️-installation)
+    - [Clone the repository](#clone-the-repository)
+    - [Create and activate conda environment](#create-and-activate-conda-environment)
+    - [Install additional dependencies if any](#install-additional-dependencies-if-any)
   - [📁 Project Structure](#-project-structure)
   - [🚀 Usage](#-usage)
     - [Training](#training)
     - [Evaluation](#evaluation)
-    - [Demo](#demo)
-  - [📊 Results](#-results)
+  - [Demo](#demo)
+  - [📊 Results \& Visualization](#-results--visualization)
   - [📝 Model Card](#-model-card)
-    - [Model Details](#model-details)
-    - [Intended Use](#intended-use)
-    - [Training Data](#training-data)
-    - [Performance and Limitations](#performance-and-limitations)
   - [📚 Citation](#-citation)
   - [📄 License](#-license)
   - [👥 Authors](#-authors)
 
-## 🔍 Overview
-
-{{cookiecutter.project_short_description}}
-
-## 🏗 Framework
-
-[Add a diagram or description of your project's architecture/framework here]
-
 ## ⚙️ Installation
-
+### Clone the repository
 ```bash
-# Clone the repository
-git clone https://github.com/{{cookiecutter.author_name.lower().replace(' ', '')}}/{{cookiecutter.project_slug}}.git
+git clone https://github.com/github_repo.git
 cd {{cookiecutter.project_slug}}
-
-# Create and activate conda environment
+```
+### Create and activate conda environment
+```bash
 conda env create -f environment.yml
 conda activate {{cookiecutter.project_slug}}
-
-# Install additional dependencies if any
+```
+### Install additional dependencies if any
+```bash
 pip install -e .
 ```
 
@@ -56,15 +53,13 @@ pip install -e .
 
 ```
 {{cookiecutter.project_slug}}/
-├── configs/               # Configuration files
-├── data/                 # Data processing scripts and datasets
-├── models/               # Model architecture definitions
-├── tools/                # Training and evaluation scripts
-├── demo/                 # Demo applications and examples
-├── tests/                # Unit tests
-├── environment.yml       # Conda environment specification
-├── setup.py             # Package setup file
-└── README.md            # This file
+    ├── data/          # Dataset storage and data files
+    ├── scripts/       # Standalone scripts and utilities
+    ├── models/        # Trained model checkpoints
+    ├── notebooks/     # Jupyter notebooks for analysis
+    ├── results/       # Experimental results and metrics
+    ├── figures/       # Project figures and visualizations
+    └── README.md      # Project documentation
 ```
 
 ## 🚀 Usage
@@ -72,29 +67,27 @@ pip install -e .
 ### Training
 
 ```bash
-# Example training command
-python tools/train.py --config configs/default.yaml
+python train.py
+# bash train.sh
 ```
 
 ### Evaluation
 
 ```bash
-# Example evaluation command
-python tools/eval.py --config configs/default.yaml --checkpoint path/to/checkpoint
+python eval.py  --checkpoint models/path/to/checkpoint
+# bash eval.sh
 ```
 
-{% if cookiecutter.include_demo == 'y' %}
-### Demo
+## Demo
 
 [Provide instructions for running the demo]
 
 ```bash
 # Example demo command
-python demo/run_demo.py --input path/to/input
+python run_demo.py --input data/path/to/input
 ```
-{% endif %}
 
-## 📊 Results
+## 📊 Results & Visualization
 
 [Add tables, figures, or graphs showing your key results]
 
@@ -106,25 +99,8 @@ python demo/run_demo.py --input path/to/input
 
 {% if cookiecutter.include_model_card == 'y' %}
 ## 📝 Model Card
-
-### Model Details
-- **Model Architecture:**
-- **Parameters:**
-- **Input:**
-- **Output:**
-
-### Intended Use
-- **Primary Use Cases:**
-- **Out-of-Scope Uses:**
-
-### Training Data
-- **Dataset:**
-- **Preprocessing:**
-
-### Performance and Limitations
-- **Performance Metrics:**
-- **Known Limitations:**
-{% endif %}
+Please see the [Hugging Face page](https://huggingface.co/username/my-model)
+for the full model card.
 
 ## 📚 Citation
 
@@ -136,8 +112,7 @@ If you use this code in your research, please cite:
   title="{{cookiecutter.project_name}}",
   author="{{cookiecutter.author_name}}",
   institution="{{cookiecutter.institution}}",
-  year="202x",
-  url="https://github.com/{{cookiecutter.author_name.lower().replace(' ', '')}}/{{cookiecutter.project_slug}}"
+  year="202x"
 \}
 ```
 
