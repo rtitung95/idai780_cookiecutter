@@ -131,7 +131,7 @@ python demo/run_demo.py --input path/to/input
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{{{cookiecutter.author_name.split()[0].lower()}}_{{cookiecutter.project_name.split()[0].lower()}}_{{cookiecutter.version}},
+@article{{{cookiecutter.author_name.split()[0].lower()}},
   title={{{cookiecutter.project_name}}},
   author={{{cookiecutter.author_name}}},
   institution={{{cookiecutter.institution}}},
