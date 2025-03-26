@@ -31,7 +31,6 @@ ___
   - [📝 Model Card](#-model-card)
   - [📚 Citation](#-citation)
   - [📄 License](#-license)
-  - [👥 Authors](#-authors)
 
 ## ⚙️ Installation
 ### Clone the repository
@@ -106,12 +105,16 @@ for the full model card.
 
 If you use this code in your research, please cite:
 
+```bibtex
+@article{%
+  {{cookiecutter.author_name.split()[0].lower()}},
+  title="{{cookiecutter.project_name}}",
+  author="{{cookiecutter.author_name}}",
+  institution="{{cookiecutter.institution}}",
+  year="202x"
+%}
+```
 
 ## 📄 License
 
 This project is licensed under the {{cookiecutter.open_source_license}} License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Authors
-
-- {{cookiecutter.author_name}} ({{cookiecutter.author_email}})
-- {{cookiecutter.institution}}
