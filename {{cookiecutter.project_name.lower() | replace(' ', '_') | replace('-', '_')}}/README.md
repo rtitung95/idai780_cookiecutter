@@ -133,11 +133,11 @@ If you use this code in your research, please cite:
 ```bibtex
 @article\{
   {{cookiecutter.author_name.split()[0].lower()}},
-  title=\{{{cookiecutter.project_name}}\},
-  author=\{{{cookiecutter.author_name}}\},
-  institution=\{{{cookiecutter.institution}}\},
-  year={2025},
-  url=\{https://github.com/{{cookiecutter.author_name.lower().replace(' ', '')}}/{{cookiecutter.project_slug}}\}
+  title="{{cookiecutter.project_name}}",
+  author="{{cookiecutter.author_name}}",
+  institution="{{cookiecutter.institution}}",
+  year="202x",
+  url="https://github.com/{{cookiecutter.author_name.lower().replace(' ', '')}}/{{cookiecutter.project_slug}}"
 \}
 ```
 
