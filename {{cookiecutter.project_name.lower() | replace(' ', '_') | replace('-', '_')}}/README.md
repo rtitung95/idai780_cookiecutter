@@ -106,7 +106,7 @@ for the full model card.
 
 If you use this code in your research, please cite:
 
-```bibtex
+<!-- ```bibtex
 @article\{
   {{cookiecutter.author_name.split()[0].lower()}},
   title="{{cookiecutter.project_name}}",
@@ -114,7 +114,7 @@ If you use this code in your research, please cite:
   institution="{{cookiecutter.institution}}",
   year="202x"
 \}
-```
+``` -->
 
 ## 📄 License
 
